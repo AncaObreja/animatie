@@ -1,0 +1,134 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+.square {
+    height: 600px;
+    width: 600px;
+    background-color:  #050210;
+    box-sizing: border-box;
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+  height: 470px;
+  width: 470px;
+  border-radius: 50%;
+  padding: 2em;
+  box-sizing: border-box;
+  background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+  
+  filter: blur(5px);
+
+  animation-name: rotatie;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+@keyframes rotatie {
+  to {
+      transform:  rotate(360deg);
+  }
+
+}
+.circle1 {
+    height: 430px;
+    width: 430px;
+    margin:3em;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+    position: relative;
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    filter: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+@keyframes rotate {
+  to {
+      transform:  rotate(360deg);
+  }
+
+}
+
+.circle2 {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  padding: 5em;
+  box-sizing: border-box;
+  background: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.circle3 {
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    padding: 2em;
+    box-sizing: border-box;
+    background: #33313d;
+    position: relative;
+    animation-name: centru;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes centru {
+    0% {
+      
+        width: 5px;
+        height: 5px;
+        position: relative;
+        background: #33313d;
+
+
+    }
+    50% {
+
+      width: 170px;
+      height: 170px;
+      position: absolute;
+      background-color: rgb(48, 45, 45);
+
+    }
+    100% {
+
+        width: 370px;
+        height: 370px;
+        position: absolute;
+        background-color: black;
+    }
+}
